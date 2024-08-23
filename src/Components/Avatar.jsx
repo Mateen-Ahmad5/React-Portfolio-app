@@ -15,6 +15,8 @@ const Avatar = ({ name, skills, title }) => {
               {skill}
             </li>
           ))}
+
+          my name mateen
         </ul>
       </div>
     </div>
