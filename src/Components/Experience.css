@@ -1,0 +1,12 @@
+.experience-section{
+  
+    width: 99%;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    margin-top: 8px;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+}
