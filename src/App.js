@@ -4,15 +4,23 @@ import Experience from "./Components/Experience";
 import Avatar from "./Components/Avatar";
 import Footer from "./Components/Footer";
 import "./App.css";
-
+import { useState } from "react";
 
 function App() {
+  const [isEditMode, setIsEditMode] = useState(false);
+  const toggleEditMode = () => {
+    setIsEditMode(!isEditMode);
+  };
+
+
   const HEADING_TEXT = "My Portfolio";
-  const SIGNUP_BUTTON_TEXT = "Sign up";
+  const Edit_BUTTON_TEXT = isEditMode ? "Save" : "Edit";
 
   return (
     <div>
-      <Header heading={HEADING_TEXT} buttonText={SIGNUP_BUTTON_TEXT} />
+      <Header heading={HEADING_TEXT} 
+      buttonText={Edit_BUTTON_TEXT} 
+      onButtonClick={toggleEditMode}/>
       <div className="container" style={{ display: "flex" }}>
         <div>
           <About
