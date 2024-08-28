@@ -1,12 +1,53 @@
 .experience-section{
-  
     width: 99%;
-    padding-left: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc; 
-    margin-top: 8px;
+    padding: 8px;
+  
 }
-.paragraph{
+.experience-form{
     display: flex;
-    justify-content: center;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
+.experience-form label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .experience-form input,
+  .experience-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+
+
+  }
+  .experience-form input:focus,
+.experience-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+  .experience-section button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .experience-section button:hover {
+    background-color: #0056b3;
+  }
