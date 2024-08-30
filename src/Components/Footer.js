@@ -1,10 +1,18 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = ({ paragraph }) => {
+const Footer = ({ paragraph, isEditMode, onParagraphChange }) => {
   return (
     <div className="footer">
-      <p>{paragraph}</p>
+      {isEditMode ? (
+        <input
+          value={paragraph}
+          onChange={(e) => onParagraphChange(e.target.value)}
+          rows="3"
+        />
+      ) : (
+        <p>{paragraph}</p>
+      )}
     </div>
   );
 };

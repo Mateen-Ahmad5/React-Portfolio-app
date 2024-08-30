@@ -1,53 +1,72 @@
-.experience-section{
-    width: 99%;
-    box-sizing: border-box;
-    border: 1px solid #ccc; 
-    padding: 8px;
-  
+.experience-section {
+  width: 99%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 10px;
 }
-.experience-form{
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+.experience-form {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .experience-form label {
-    font-weight: 600;
-    color: #444;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .experience-form input,
-  .experience-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    width: 100%;
-    box-sizing: border-box;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 
-
-  }
-  .experience-form input:focus,
+.experience-form input,
+.experience-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+.experience-form input:focus,
 .experience-form textarea:focus {
   border-color: #007bff;
   outline: none;
 }
-  .experience-section button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    align-self: flex-end;
-  }
-  
-  .experience-section button:hover {
-    background-color: #0056b3;
-  }
+.experience-section button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.experience-section button:hover {
+  background-color: #0056b3;
+}
+
+.experience input[type="text"],
+.experience textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+
+  background-color: #fff;
+  display: block;
+}
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
