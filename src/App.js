@@ -13,7 +13,7 @@ function App() {
   const toggleEditMode = () => {
     setIsEditMode(!isEditMode);
   };
-  const Edit_BUTTON_TEXT = isEditMode ? "Save" : "Edit";
+  const BUTTON_TEXT = isEditMode ? "Save" : "Edit";
 
   const [heading, setHeading] = useState("About Us");
   const [paragraph, setParagraph] = useState(
@@ -46,7 +46,7 @@ function App() {
     <div>
       <Header
         heading={headerHeading}
-        buttonText={Edit_BUTTON_TEXT}
+        buttonText={BUTTON_TEXT}
         onButtonClick={toggleEditMode}
         isEditMode={isEditMode}
         onHeadingChange={setHeaderHeading}

@@ -1,7 +1,5 @@
 .avatar {
   width: 100%;
-
-  /* max-width: 400px; */
   margin: 16px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -24,7 +22,6 @@
   color: #777;
   margin-bottom: 12px;
 }
-
 .skills-list {
   list-style: none;
   padding: 0;
@@ -32,7 +29,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .skill-item {
   background-color: #333;
   color: #fff;
@@ -47,7 +43,7 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
